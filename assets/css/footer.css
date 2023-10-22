@@ -1,0 +1,33 @@
+.icones {
+    width: 40px;
+}
+
+.img-rodape {
+    width: 110px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.list-group-item {
+    background-color: #f2f2f2;
+}
+
+.nav-rodape {
+    text-decoration: none;
+    color: #000000;
+}
+
+.perfil {
+    width: 100px;
+    border: 2px solid #DFDFDF;
+    border-radius: 20px;
+}
+
+.contato {
+    padding-left: 48px;
+}
+
+.icons-redes {
+    color: #000000;
+}
