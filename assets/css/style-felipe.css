@@ -1,13 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+html {
+    font-family: 'Comic Neue', cursive!important;
+}
 header {
-    background-color: #ec504c;
+    background-color: rgb(174, 3, 29);
+    font-family: 'Comic Neue', cursive;
 }
 
 footer {
     background-color: rgb(174, 3, 29);
 }
-div.tres {
-    width:30px;
-    height:30px;
-    border: 25px solid; /* As 4 bordas sólidas com 25px de espessura */
-    border-color: #f00 #0f0 #00f #fc0; /* cores: topo, direita, inferior, esquerda */
-    }
+.nav-link{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+    color: #ffffff ;
+}
+.navbar-toggler-icon {
+    height: 5px !important;
+    width: 40px !important;
+    margin: 5px 0px !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    display: block !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
