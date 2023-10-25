@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Ada Tech | IFood</title>
+
+    <!-- Arquivos de Estilização -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Projeto criado para entrega de conclusão de módulo de “Front End Estático” da Ada Tech | IFood, onde foi utilizado tecnologias como HTML5, CSS3 e JavaScript, tendo como base principal o framework Bootstrap na versão 5.0.2. Projeot criado por Douglas Poeta, Elaine Santin e Felipe Matos, ambos desenvolvedores e alunos do Bootcamp.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/ada-logo.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-3">
+                <div class="d-flex flex-grow-1">
+                    <div class="navbar-nav">
+                        <a href="index-felipe.html">
+                            <img src="assets/img/logo-ifood-branco.png" alt="Logo Ifood para o header" height="50"
+                                class="d-inline-block mt-2 mt-2">
+                        </a>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <hr class="d-md-none text-white-50">
+                        <a class="nav-link" aria-current="page" href="#inicio">Início</a>
+                        <a class="nav-link" href="#cardapio">Cardápio</a>
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                        <a class="nav-link" href="#informacoes">Informações</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Inicio da Main -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/primeiro-banner.jpg" class="d-block mobile" alt="...">
+                    <!-- Primeiro Banner -->
+                    <div class="carousel-caption d-md-block conteudo-banner">
+                        <section id="banner" class="d-flex align-items-center">
+
+                            <div class="row justify-content-between gy-5">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                                    <h2 data-aos="fade-up">Está com fome?<br>Peça no IFood</h2>
+                                    <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem
+                                        itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                        <button href="#cardapio" class="btn btn-danger">Peça Agora</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                                    <img src="assets/img/combo-1.png" class="img-fluid" alt="" data-aos="zoom-out"
+                                        data-aos-delay="300">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Primeiro Banner -->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/primeiro-banner.jpg" class="d-block mobile" alt="...">
+                    <!-- Segundo Banner -->
+                    <div class="carousel-caption d-md-block conteudo-banner">
+                        <section id="banner" class="d-flex align-items-center">
+
+                            <div class="row justify-content-between gy-5">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                                    <h2 data-aos="fade-up">Está com fome?<br>Peça no IFood</h2>
+                                    <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem
+                                        itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                        <button href="#cardapio" class="btn btn-danger">Peça Agora</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                                    <img src="assets/img/combo-2.png" class="img-fluid" alt="" data-aos="zoom-out"
+                                        data-aos-delay="300">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Segundo Banner -->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/primeiro-banner.jpg" class="d-block mobile" alt="...">
+
+                    <!-- Terceiro Banner -->
+                    <div class="carousel-caption d-md-block conteudo-banner">
+                        <section id="banner" class="d-flex align-items-center">
+
+                            <div class="row justify-content-between gy-5">
+                                <div
+                                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                                    <h2 data-aos="fade-up">Está com fome?<br>Peça no IFood</h2>
+                                    <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem
+                                        itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                                        <button href="#cardapio" class="btn btn-danger">Peça Agora</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                                    <img src="assets/img/combo-3.png" class="img-fluid" alt="" data-aos="zoom-out"
+                                        data-aos-delay="300">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Terceiro Banner -->
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Cardápio-->
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <h3 class="pb-4 pt-5 mb-4 border-bottom text-center">
+                        Cardápio
+                    </h3>
+
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 pb-5">
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/batata-frita.jpg" class="card-img-top"
+                                        alt="Porção de Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Batata-Frita</h5>
+                                        <p class="card-text">Porção de 50g de Batata-Frita.</p>
+                                        <small>R$ 5</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/combo-hamburguer.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Combo Hambúrguer</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 15</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/pizza.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Pizza</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 40</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/yakisoba.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Yakisoba</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 30</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/frango-grelhado.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Frango Grelhado</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 25</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/torta-frango.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Torta de Frango</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 40</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/comida-mexicana.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Comida Mexicana</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 50</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/lasanha.jpg" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Lasanha</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 30</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card h-100 w-100 cards-cardapio">
+                                    <img src="assets/img/cardapio/japonesa.avif" class="card-img-top"
+                                        alt="Combo de Hambúrguer com Batata-Frita">
+                                    <div class="card-footer">
+                                        <h5 class="card-title">Comida Japonesa</h5>
+                                        <p class="card-text">Combo de Hambúrguer com porção de batata-frita</p>
+                                        <small>R$ 60</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-light rounded">
+                            <h4 class="fst-italic">Avaliações</h4>
+                            <p class="mb-0">O que eles estão dizendo sobre nós </p>
+                        </div>
+
+                        <!--Avaliações -->
+                        <div class="avaliacoes-red">
+                            <p>
+                                João: "Aplicativo está rápido e intuitivo. Sempre atende bem rápido e informa
+                                detalhadamente a produção da comida. Indico para qualquer pessoa."
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="avaliacoes-orange">
+                            <p>
+                                Ana: "Aplicativo está rápido e intuitivo. Sempre atende bem rápido e informa
+                                detalhadamente a produção da comida. Indico para qualquer pessoa."
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="avaliacoes-red">
+                            <p>
+                                Paulo: "Aplicativo está rápido e intuitivo. Sempre atende bem rápido e informa
+                                detalhadamente a produção da comida. Indico para qualquer pessoa."
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="avaliacoes-orange">
+                            <p>
+                                Maria: "Aplicativo está rápido e intuitivo. Sempre atende bem rápido e informa
+                                detalhadamente a produção da comida. Indico para qualquer pessoa."
+                                </a>
+                            </p>
+                        </div>
+                        <!--Avaliações -->
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <!--Cardápio-->
+
+        <!--Douglas-->
+        <section class="banner-section-2 pt-5 mt-5 pb-5">
+            <div class="container"><!--Definir primeiro-->
+                <div class="row"> <!--Definir segundo-->
+                    <!-- Primeira coluna -->
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="assets/img/banners/moto-banner.png" alt="" srcset="">
+                    </div>
+
+                    <!-- Segunda coluna -->
+                    <div class="col-md-7">
+                        <div class="row">
+                            <p class="descricao-section">FOOD DELIVERY</p>
+                        </div>
+                        <div class="row">
+                            <h3>Melhor Serviço para atender às suas expectativas.</h3>
+                        </div>
+                        <div class="row">
+                            <p>Apenas se trata de trazer comida de qualidade dos seus restaurantes favoritos.
+                                Trata-se de estabelecer uma conexão. </p>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-lg">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Primeira coluna de baixo -->
+                    <div class="col-md-7">
+                        <div class="row">
+                            <p class="descricao-section pt-5">ABOUT US</p>
+                        </div>
+                        <div class="row">
+                            <h3>Dedicado a Proporcionar-lhe Prazer.</h3>
+                        </div>
+                        <div class="row">
+                            <p> A satisfação do cliente é o processo de superar as expectativas dos clientes
+                                para
+                                construir uma experiência positiva de longo prazo em torno do seu produto ou serviço.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary btn-lg">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segunda coluna de baixo -->
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="assets/img/banners/banner-entregador-oficial.png " alt="" srcset="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--Douglas-->
+
+        <!-- Elaine -->
+        <div class="container-preto pb-5">
+            <section class="container-sm formulario">
+                <div class="row text-center align-items-center">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./assets/img/delivery-form.png"
+                            alt="Entregador de alimento entregando pedido.">
+                    </div>
+                    <div class="col">
+                        <div class="row text-start mt-3 form-texto">
+                            <h5 class="card-title">Quer ficar por dentro das novidades e de quebra ganhar cupons
+                                exclusivos?</h5>
+                            <p class="card-text">Assine a nossa newsletter e receba as novidades em primeira mão além de
+                                ganhar cupons de desconto exclusivos.</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <form class="row row-cols-lg-auto g-3 align-items-center">
+                                <div class="col-md-10">
+                                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                                    <div class="input-group">
+                                        <input type="email" name="email" class="form-control"
+                                            id="inlineFormInputGroupUsername" placeholder="email@email.com">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Elaine -->
+    </main>
+
+    <footer>
+        <div class="container-sm pt-3">
+            <div class="row align-items-start">
+                <div class="col-md-3">
+                    <div class="row">
+                        <figure class="img-rodape">
+                            <img class="icones" src="./assets/img/destino.png" alt="Ícone de localização">
+                            <figcaption class="text-center">Food Delivery</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row conteudo">
+                        <p>Projeto Final do Módulo 1 da Trilha de Front-End | ADA</p>
+                        <p>Desenvolver uma proposta de website para o iFood.</p>
+                        <p><strong>Turma 1094 - #VemSerTech</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <div class="row">
+                        <h4>Links Rápidos</h4>
+                    </div>
+                    <div class="row">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="nav-rodape" href="#inicio">Início</a></li>
+                            <li class="list-group-item"><a class="nav-rodape" href="#cardapio">Cardápio</a></li>
+                            <li class="list-group-item"><a class="nav-rodape" href="#sobre">Sobre Nós</a></li>
+                            <li class="list-group-item"><a class="nav-rodape" href="#info">Informações</a></li>
+                            <li class="list-group-item"><a class="nav-rodape" href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-2">
+                    <div class="row align-items-start contato">
+                        <h4>Contatos</h4>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <div class="row d-flex justify-content-center">
+                                <figure class="img-fluid mb-1">
+                                    <img src="./assets/img/perfils/Douglas-perfil.jfif"
+                                        alt="Foto de Perfil do Dev Douglas Poeta" class="perfil">
+                                    <figcaption>
+                                        Douglas Poeta
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://github.com/DouglasPoeta" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://www.linkedin.com/in/douglas-poeta-cardoso/"
+                                        target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row d-flex justify-content-center">
+                                <figure class="img-fluid mb-1">
+                                    <img src="./assets/img/perfils/Elaine-perfil.jfif"
+                                        alt="Foto de Perfil da Dev Nanne Santin" class="perfil">
+                                    <figcaption>
+                                        Nanne Santin
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://github.com/NanneSantin" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://www.linkedin.com/in/elaine-stefani/"
+                                        target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row d-flex justify-content-center">
+                                <figure class="img-fluid mb-1">
+                                    <img src="./assets/img/perfils/Felipe.png" alt="Foto de Perfil do Dev Felipe Matos"
+                                        class="perfil">
+                                    <figcaption>
+                                        Felipe Matos
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://github.com/FMTSL" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icons-redes" href="https://www.linkedin.com/in/felipematoslima/"
+                                        target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-start"></div>
+                    <div class="row align-items-start"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-sm pt-3">
+            <div class="row text-center">
+                <p>© Copyright <time datetime="out 2023">2023</time> - iFood - Todos os direitos reservados iFood com
+                    Agência de Restaurantes
+                    Online S.A. | Desenvolvido por Nanne Santin, Felipe Matos e Douglas Poeta</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
