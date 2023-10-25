@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, small {
+    font-family: 'Comic Neue', cursive!important;
+}
+header {
+    background-color: rgb(174, 3, 29);
+    font-family: 'Comic Neue', cursive;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+    color: #ffffff ;
+}
+.navbar-toggler-icon {
+    height: 5px !important;
+    width: 40px !important;
+    margin: 5px 0px !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    display: block !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.cards-cardapio {
+    border-radius: 20px;
+    border: none;
+}
+.cards-cardapio > img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.cards-cardapio .card-footer  {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background-color: rgb(174 3 29 / 90%);
+    opacity: 20px;
+    filter: blur(0.6px);
+    color: white;
+}
+.conteudo-banner {
+    bottom: 3rem;
+}
+.mobile {
+    width: 100%;
+}
+@media (max-width:600px) {
+    .mobile {
+        width: 115rem;
+    }
+}
+@media (min-width:601px) and (max-width:768px) {
+    .mobile {
+        width: 135rem;
+    }
+}
+img.img-fluid.avaliações {
+    max-width: 25%;
+    border-radius: 50%;
+}
+.avaliacoes-red p {
+    background: #ffa3a342;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: medium;
+    font-family: cursive;
+}
+.avaliacoes-orange p {
+    background: #ffe1c2;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: medium;
+    font-family: cursive;
+}
